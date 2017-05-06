@@ -20,6 +20,9 @@ gem 'autoprefixer-rails'
 # Github (Octokit)
 gem "octokit", "~> 4.0"
 
+# Github Oauth
+gem 'omniauth-github'
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
