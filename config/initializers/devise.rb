@@ -260,6 +260,9 @@ Devise.setup do |config|
   #   manager.intercept_401 = false
   #   manager.default_strategies(scope: :user).unshift :some_external_strategy
   # end
+  Warden::Manager.after_authentication do |user,auth,opts|
+    GithubStarredRepoService.new(user).fetch_and_store
+  end
 
   # ==> Mountable engine configurations
   # When using Devise inside an engine, let's call it `MyEngine`, and this engine
