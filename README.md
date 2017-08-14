@@ -1,1 +1,7 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+# Blend
+
+A small exercise to interface the Github api with a rails app.
+
+Nothing important. Just to try stuff...
+
+gem used -> Octocat
